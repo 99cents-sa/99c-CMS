@@ -13,7 +13,7 @@ class CreateContactInfosTable extends Migration
             $table->string('name');
             $table->longText('address');
             $table->string('email');
-            $table->integer('phone');
+            $table->string('phone');
             $table->timestamps();
             $table->softDeletes();
         });

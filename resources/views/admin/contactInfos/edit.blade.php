@@ -52,7 +52,7 @@
                         </div>
                         <div class="form-group {{ $errors->has('phone') ? 'has-error' : '' }}">
                             <label for="phone">{{ trans('cruds.contactInfo.fields.phone') }}*</label>
-                            <input type="number" id="phone" name="phone" class="form-control" value="{{ old('phone', isset($contactInfo) ? $contactInfo->phone : '') }}" step="1" required>
+                            <input type="text" id="phone" name="phone" class="form-control" value="{{ old('phone', isset($contactInfo) ? $contactInfo->phone : '') }}" required>
                             @if($errors->has('phone'))
                                 <p class="help-block">
                                     {{ $errors->first('phone') }}

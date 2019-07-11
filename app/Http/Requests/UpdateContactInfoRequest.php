@@ -26,7 +26,6 @@ class UpdateContactInfoRequest extends FormRequest
             ],
             'phone'   => [
                 'required',
-                'digits_between:0,10',
             ],
         ];
     }
