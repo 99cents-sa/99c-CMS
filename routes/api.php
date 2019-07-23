@@ -23,7 +23,7 @@
     Route::resource('contact-infos', 'ContactInfoController',
     ['only' => ['index', 'show']]);
 
-    Route::resource('portfolio', 'PortfolioController',
+    Route::resource('portfolios', 'PortfolioController',
     ['only' => ['index', 'show']]);
 
     Route::resource('clients', 'ClientController',
